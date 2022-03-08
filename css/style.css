@@ -200,6 +200,11 @@ body {
     color: #FFD723;
   }
 }
+@media (max-width: 66.875em) {
+  .button {
+    color: #FFD723;
+  }
+}
 
 .footer-title {
   color: #FFFFFF;
@@ -225,6 +230,19 @@ body {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.animation {
+  overflow: hidden;
+}
+.animation img {
+  transition: 1s;
+  display: block;
+}
+@media (any-hover: hover) {
+  .animation img:hover {
+    transform: scale(1.1);
+  }
 }
 
 .header {
@@ -648,6 +666,9 @@ body {
     margin-bottom: 1.25rem;
   }
 }
+.content-main__text._active {
+  transition: all 0.8s ease 0.4s;
+}
 .content-main__button {
   text-decoration: underline;
   color: #ffd723;
@@ -657,6 +678,9 @@ body {
   .content-main__button:hover {
     color: #e2bf23;
   }
+}
+.content-main__button._active {
+  transition: all 0.8s ease 0.5s;
 }
 
 .emblems__body {
